@@ -1,12 +1,17 @@
 {
-  "name": "facebook-clone",
+  "name": "facebook-firebase-next-chat",
   "version": "0.1.0",
   "private": true,
+  "cacheDirectories": [
+    "node_modules",
+    ".next/cache"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "deploy": "git add . && git commit -m Build && git push && vercel --prod"
   },
   "dependencies": {
     "@cometchat-pro/chat": "2.4.0",
